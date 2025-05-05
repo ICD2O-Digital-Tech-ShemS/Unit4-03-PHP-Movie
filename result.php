@@ -1,12 +1,13 @@
 <?php
-	$guessNumber = $_POST['guessNumber'];
-
-        if ($guessNumber == 12) {
-            echo "You got it right";
+	$Celsius = $_POST['Celsius'];
+	$Conversion =($Celsius * 9/5) + 32;
+	$Final = round($Conversion,1);
+        if ($Final >= 15) {
+            echo "It is Hot out side";
         }
-        if  (guessNumber != 12) {
-            echo  "You got it wrong. the correct answer is" + 12; 
+        else  ($Final <= 15) {
+            echo  "It is cold"; 
     }
 ?>
 <h3>Results:</h3>
- <?php echo "$ans" ?>.
+    <?php echo "$Final" ?>°F.
