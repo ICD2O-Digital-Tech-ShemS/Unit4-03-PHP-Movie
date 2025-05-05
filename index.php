@@ -26,5 +26,4 @@
           <div id="ans"></div>
 	    </iframe>
 	</body>
-	</body>
 </html>
