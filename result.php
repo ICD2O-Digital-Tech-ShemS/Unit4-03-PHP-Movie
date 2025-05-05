@@ -1,12 +1,16 @@
 <?php
-	$Celsius = $_POST['Celsius'];
-	$Conversion =($Celsius * 9/5) + 32;
-	$Final = round($Conversion,1);
-        if ($Final >= 15) {
-            echo "It is Hot out side";
+	$Age = $_POST['Age'];
+        if ($Age >= 17) {
+            $Final = "You can watch PG18 Moves";
         }
-        else  ($Final <= 15) {
-            echo  "It is cold"; 
+        else if (WatchMove >= 13) {
+           $Final = "You are only allowed to watch PG13"; 
+    }
+    else if (WatchMove <= 12) {
+       $Final = "You are only allowed to watch PG"; 
+    }
+    else {
+        $Final = "Enter a Valid Age"; 
     }
 ?>
 <h3>Results:</h3>
