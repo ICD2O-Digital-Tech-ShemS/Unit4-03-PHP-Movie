@@ -16,10 +16,8 @@
 		?>
 		<!-- form to get the base and height from the user -->
     <form action="./result.php" method="post" target="result">
-         <h3>Enter Age</h3>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input type="number" step="any" id="enterAge" placeholder="enterAge">
-          </div>
+          <label for="enterAge">Enter Age</label>
+        <input type="text" id="enterAge" placeholder="EnterAge" name="enterAge">
         <br><br>
         <input type="submit" value="Enter Age">
 		</form>
