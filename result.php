@@ -1,7 +1,8 @@
 <?php
 	$ans= "";
-	$enterAge = parseInt(document.getElementById("enterAge").value);
-	if (enterAge >= 17) {
+	$enterAge = $_POST['enterAge'];
+	
+    if (enterAge >= 17) {
         ans = "You can watch PG18 Moves"
     }
     else if (enterAge >= 13) {
