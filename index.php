@@ -15,7 +15,7 @@
 			echo "<h3>Watch a move</h3>";
 		?>
 		<!-- form to get the base and height from the user -->
-    <form action="./result.php" method="post" target="results">
+    <form action="./result.php" method="post" target="result">
          <h3>Enter Age</h3>
           <div class="mdl-textfield mdl-js-textfield">
             <input type="number" step="any" id="enterAge" placeholder="enterAge">
@@ -24,10 +24,8 @@
         <input type="submit" value="Enter Age">
 		</form>
 
-			<iframe id="results" name="results">			
-        <div id="answers">
+			<iframe id="result" name="result">
           <div id="ans"></div>
-        </div>
 	    </iframe>
 	</body>
 	</body>
