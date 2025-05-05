@@ -1,29 +1,30 @@
-<html lang="en-ca">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <!-- Metadata -->
-    <meta charset="utf-8">
-    <meta name="description" content="user input">
-    <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Shem Irekpita">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Watch a move</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Guessing Game"/>
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Shem Irekpita" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" sizes="180x190" href="">
+    <title>Guess The Number</title>
   </head>
   <body>
-		<!-- php echo to print the html to the page -->
     <?php 
-			echo "<h3>Watch a move</h3>";
+			echo "<h3>Guess The NUmber</h3>";
 		?>
-		<!-- form to get the base and height from the user -->
-    <form action="./result.php" method="post" target="result">
-          <label for="enterAge">Enter Age</label>
-        <input type="text" id="enterAge" placeholder="EnterAge" name="enterAge">
+        <form action="./result.php" method="post" target="result">
+        <label for="guessNumber">Guess the Number</label>
+        <input type="number" id="guessNumber" placeholder="guessNumber" name="guessNumber">
         <br><br>
-        <input type="submit" value="Enter Age">
+        <input type="submit" value="Guess Number">
 		</form>
-
-			<iframe id="result" name="result">
+        
+        <iframe id="result" name="result">			
           <div id="ans"></div>
 	    </iframe>
-	</body>
+  </body>
 </html>
